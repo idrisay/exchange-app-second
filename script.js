@@ -25,7 +25,7 @@ const getCurrecncyData = (from, to) => {
 
 getCurrecncyData(fromCurrency, toCurrency);
 
-var getCurrencyInterval = window.setInterval(function () {
+window.setInterval(function () {
   getCurrecncyData(fromCurrency, toCurrency);
 }, 3000);
 
