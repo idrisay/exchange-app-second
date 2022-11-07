@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <style>
+      .bg-img {
+        background-image: url("https://picsum.photos/1600/900");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      id="app"
+      class="bg-img h-screen w-screen display flex items-center justify-center"
+    >
+      <div
+        class="bg-white bg-opacity-75 p-4 border-[1px] border-blue-400 rounded-md"
+      >
+        <p class="flex justify-center items-center text-3xl">
+          <i class="ri-copper-coin-line mt-[1px] text-blue-900 text-4xl"></i
+          >ExChange App
+        </p>
+        <p class="text-center text-xl">
+          <span id="from-currency">EUR</span> /
+          <span id="to-currency">USD</span>
+        </p>
+        <p id="result" class="text-center text-4xl bg-red-100 rounded-lg">##</p>
+        <form>
+          <input
+            type="text"
+            class="my-2 bg-opacity-50 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            placeholder="from"
+            required
+          />
+          <input
+            type="text"
+            class="my-2 bg-opacity-50 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            placeholder="to"
+            required
+          />
+          <button
+            type="submit"
+            class="w-full flex justify-center text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mr-2 mb-2"
+          >
+            <i class="ri-currency-fill text-xl px-2"></i>
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
